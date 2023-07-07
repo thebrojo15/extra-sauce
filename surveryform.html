@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1 id="title">Bordy Desk Survey Form</h1>
+        <p id="description">Fill out the form below to give any feedback to Bordy (mainly a complaint form for Bin)</p>
+        <form id="survey-form">
+            <div class="info">
+                <label id="name-label" for="name">Name:</label>
+                <input class="name" id="name" type="text" placeholder="Bin" required>
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="something@someone.somehow" required>
+                <label id="number-label" for="number">On a scale of 1 through 10, how important is this complaint:</label>
+                <input id="number" type="number" min="1" max="10" placeholder="1-10">
+            </div>
+            <h3>Choose a car yep</h3>
+            <label for="dropdown">Favorite car?</label>
+            <select id="dropdown">
+                <option value="honda-beat">Honda Beat</option>
+                <option value="suzuki-cappuccino">Suzuki Cappuccino</option>
+                <option value="daihatsu-copen">Daihatsu Copen</option>
+            </select>
+            <label for="fish">Spinning Fish</label>
+            <input id="fish" type="radio" name="fav-video" value="Spinning Fish">
+            <label for="bear">Strolling Polar Bear</label>
+            <input id="bear" type="radio" name="fav-video" value="Strolling Polar Bear">
+            <h3>Pick your emotions for the complaint</h3>
+            <label for="option1">Happy</label>
+            <input type="checkbox" id="option1" name="option1" value="Happy">
+            <label for="option2">Sad</label>
+            <input type="checkbox" id="option2" name="option2" value="Sad">
+            <label for="option3">Angry</label>
+            <input type="checkbox" id="option3" name="option3" value="Angry">
+            <h3>complaint time</h3>
+            <textarea name="complaint" rows="10" cols="30" placeholder="Insert complaint here..."></textarea>
+            <input id="submit" type="submit">
+        </form>
+    </body>
+</html>
